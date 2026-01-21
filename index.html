@@ -96,6 +96,12 @@
                 document.querySelector("#loading-text").remove();
             });
         });
+        window.addEventListener('beforeunload', function (e) {
+    e.preventDefault(); 
+
+    e.returnValue = ''; 
+});
+
     </script>
 </body>
 
